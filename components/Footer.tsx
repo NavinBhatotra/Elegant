@@ -18,8 +18,8 @@ export default function Footer(props: IFooterProps) {
                         alt="Brand logo"
                         className='max-w-fit'
                     />
-                    <span className='border-gray-600 border-t-2 sm:w-8 lg:border-t-0 lg:border-l-2'></span>
-                    <span>Gift & Decoration Store</span>
+                    <span className='border-gray-600 border-t-2 w-8 lg:w-0 lg:border-t-0'></span>
+                    <span className='lg:border-gray-600 lg:border-l-2 lg:pl-8'>Gift & Decoration Store</span>
                 </div>
                 <div className='flex flex-col space-y-6 lg:flex-row lg:space-x-6 lg:space-y-0'>
                     <span>Home</span>
