@@ -10,18 +10,18 @@ export interface IFooterProps {
 
 export default function Footer(props: IFooterProps) {
     return (
-        <div className='flex flex-col h-64 bg-[#141718] text-white px-28 '>
-            <div className='flex justify-between pt-20'>
-                <div className='flex space-x-4'>
+        <div className='flex flex-col text-center space-y-10 px-10 lg:h-64 bg-[#141718] text-white lg:px-28 lg:space-y-14'>
+            <div className='flex flex-col items-center space-y-6 pt-20 lg:flex-row lg:justify-between lg:space-y-0'>
+                <div className='flex flex-col items-center space-y-6 lg:flex-row lg:space-x-4 lg:space-y-0'>
                     <Image
                         src={logoWhite}
                         alt="Brand logo"
                         className='max-w-fit'
                     />
-                    <span className='border-l-2'></span>
+                    <span className='border-gray-600 border-t-2 sm:w-8 lg:border-t-0 lg:border-l-2'></span>
                     <span>Gift & Decoration Store</span>
                 </div>
-                <div className='flex space-x-6'>
+                <div className='flex flex-col space-y-6 lg:flex-row lg:space-x-6 lg:space-y-0'>
                     <span>Home</span>
                     <span>Shop</span>
                     <span>Product</span>
@@ -29,16 +29,19 @@ export default function Footer(props: IFooterProps) {
                     <span>Contact Us</span>
                 </div>
             </div>
-            <div className='flex justify-between mt-12 pt-4 border-t-2 border-gray-600'>
-                <div className='flex'>
-                    <span>Copyright © 2024 3legant. All rights reserved</span>
-                    <span>Privacy Policy</span>
-                    <span>Terms of Use</span>
+            <div className='flex flex-col-reverse items-center space-y-6 lg:justify-between lg:mt-12 lg:pt-4 border-t-2 border-gray-600 lg:flex-row lg:space-y-0 lg:space-x-6 '>
+                <div className='flex flex-col-reverse space-y-6 lg:flex-row lg:space-y-0 lg:space-x-6'>
+                    <span className='py-6 lg:py-0'>Copyright © 2024 3legant. All rights reserved</span>
+                    <div className='space-x-6'>
+                        <span className='font-semibold'>Privacy Policy</span>
+                        <span className='font-semibold'>Terms of Use</span>
+                    </div>
                 </div>
                 <div className='flex space-x-6'>
                     <Image
                         src={instagramIcon}
                         alt="Brand logo"
+
                         className='max-w-fit'
                     />
                     <Image
