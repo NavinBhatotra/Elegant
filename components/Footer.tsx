@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Image from 'next/image';
-import facebookIcon from '../public/assets/socialMedia/facebook.svg'
-import instagramIcon from '../public/assets/socialMedia/instagram.svg'
-import youtubeIcon from '../public/assets/socialMedia/youtube.svg'
+import facebookIcon from '../public/assets/SocialMedia/facebook.svg'
+import instagramIcon from '../public/assets/SocialMedia/instagram.svg'
+import youtubeIcon from '../public/assets/SocialMedia/youtube.svg'
 import logoWhite from "../public/assets/logoWhite.svg"
 
 export interface IFooterProps {
